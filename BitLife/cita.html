@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Cita</title>
+    </head>
+    <body>
+       <hgroup>
+       	<h1>Generar una Cita</h1>
+       	
+       	<form method="post" action="generarcita.php">
+              <table border="1">
+              	<tr>
+              		<td><label for="fecha">Fecha</label></td>
+              		<td><input type="date" name="fecha"></td>
+              		<td><label for="hora">Servicio que se hara</label></td>
+              		<td><select name="servicio">
+              			<option value="certificado">Certificado M&eacute;dico</option>
+              			<option value="analisis">An&aacute;lisis Clinicos</option>
+              			<option value="consulta">Consulta General</option>
+              	        </select></td>
+              	</tr>
+              	<tr>
+              		<td><label for="hora">Hora de cita</label></td>
+              		<td><select name="hora">
+              			<option value="time1">7:00-8:00</option>
+              			<option value="time2">8:00-9:00</option>
+              			<option value="time3">9:00-10:00</option>
+              			<option value="time4">10:00-11:00</option>
+              			<option value="time5">11:00-12:00</option>
+              			<option value="time6">12:00-13:00</option>
+              			<option value="time7">13:00-14:00</option>
+              			<option value="time8">14:00-15:00</option>
+              	        </select></td>
+              	    <td><label for="doctor">Doctor</label></td>
+              	        <td><select name="doc">
+              			<option value="doc1">Jose Juan Bautista</option>
+              			<option value="doc2">Javier Gomez</option>
+              			<option value="doc3">Josue Arango</option>
+              			<option value="doc4">Mario Gonzales </option>
+              			<option value="doc5">Diana Ortega</option>
+              			</select></td>    
+              	</tr>
+              	
+              </table>  
+              <button>Generar cita</button>    
+                 </form>
+       	
+       </hgroup>
+    </body>
+</html>
